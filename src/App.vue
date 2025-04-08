@@ -9,4 +9,3 @@
 <script setup>
 import Layout from './view/Layout/Layout.vue'
 </script>
-

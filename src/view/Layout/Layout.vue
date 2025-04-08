@@ -47,10 +47,12 @@
           <v-btn
             v-for="btn in ['Home', 'Calendary', 'List', 'News', 'About']"
             :key="btn"
+            :to="routesMap[btn]"
             color="white"
             height="50"
             class="mx-3 my-2 custom-btn"
             variant="outlined"
+            router
           >
             
             {{ btn }}
@@ -59,11 +61,20 @@
       </v-row>
     </v-container>
   </v-app-bar>
+    <v-main>
+      <slot></slot>
+    </v-main>
 </template>
 
 
 <script setup>
-// Nenhum script necessário
+const routesMap = {
+  Home: '/',
+  Calendary: '/calendary',
+  List: '/list',
+  News: '/news',
+  About: '/about'
+}
 </script>
 
 <style scoped lang="sass">

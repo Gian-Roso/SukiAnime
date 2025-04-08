@@ -12,24 +12,24 @@ const routes = [
     component: Home
   },
   {
-    path: '/Calendary',
+    path: '/calendary',
     name: 'Calendary',
     component: CalendaryPage
   },
   {
-    path: '/List',
+    path: '/list',
     name: 'List Anime',
     component: List
   },
   {
-    path: '/News',
+    path: '/news',
     name: 'News',
-    component: About
+    component: News
   },
   {
-    path: '/About',
-    name: 'About us',
-    component: News
+    path: '/about',
+    name: 'AboutUs',
+    component: About
   }
 ]
 
