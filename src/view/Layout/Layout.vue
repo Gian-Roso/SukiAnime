@@ -8,7 +8,8 @@
     @mouseleave="handleScroll"
     :style="{ background: 'linear-gradient(to right, #C2E9FB 0%, #F1B7EF 20%, #F1B7EF 50%, #F1B7EF 80%, #C2E9FB 100%)',
       color: 'white',
-      boxShadow: '0 5px 20px -10px rgba(250,250,250,10)' }"
+      boxShadow: '0 5px 20px -10px rgba(250,250,250,10)',
+      border: '0.2px double #C2E9FB' }"
   >
     <v-container fluid>
       <v-row no-gutters class="justify-center">
@@ -30,26 +31,26 @@
             :style="{
               left: 'calc(48% + 260px)',
               top: '50%',
-              transform: isShrunk ? 'translateY(-110%) translateX(-205%) scale(0.6)' : 'translateY(-50%)',
+              transform: isShrunk ? 'translateY(-110%) translateX(-215%) scale(0.6)' : 'translateY(-50%)',
               transition: 'all 0.5s ease'
             }"
             cover
-          />
-          <v-sheet
-            class="position-absolute"
-            :class="{ small: isShrunk }"
-            :style="{
-              top: 'calc(16.5% + 80px)',
-              left: '47%',
-              transform: isShrunk ? 'translateY(-1330%) translateX(-41%) scale(0.33)' : 'translateX(-41%)',
-              transition: 'all 0.5s ease',
-              width: '680px',
-              height: '6px',
-              backgroundColor: 'white',
-              borderRadius: '3px',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.3)'
-            }"
-          />
+            />
+            <v-sheet
+              class="position-absolute"
+              :class="{ small: isShrunk }"
+              :style="{
+                top: 'calc(16.5% + 80px)',
+                left: '47%',
+                transform: isShrunk ? 'translateY(-1330%) translateX(-43%) scale(0.33)' : 'translateX(-41%)',
+                transition: 'all 0.5s ease',
+                width: '680px',
+                height: '6px',
+                backgroundColor: 'white',
+                borderRadius: '3px',
+                boxShadow: '0 2px 6px rgba(0,0,0,0.3)'
+              }"
+            />
         </v-col>
         <!-- Botões abaixo -->
         <transition name="btn-slide" appear>
