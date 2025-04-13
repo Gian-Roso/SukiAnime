@@ -1,9 +1,14 @@
 <template>
   <v-container class="fill-height">
     <v-row align="center" justify="center">
-      <v-col cols="12" md="8" class="text-center">
-        <h1 class="text-h3 font-weight-bold mb-4">Bem-vindo à Home</h1>
-        <p class="text-subtitle-1">Essa é uma página feita com Vuetify</p>
+      <v-col cols="12" md="12" class="text-center" style="display: flex;">
+        <div class="position-relative" style="background: linear-gradient(to top, #F7F9FA, #F5b9F0);
+         top: 20px;
+         height: 860px;
+         margin-bottom: 10%;
+         width: 100%;  "> 
+      </div>
+
       </v-col>
     </v-row>
   </v-container>
